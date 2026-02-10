@@ -1,0 +1,89 @@
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      overflow: hidden;
+      font-family: Arial, sans-serif;
+    }
+ 
+    #game {
+      width: 100vw;
+      height: 100vh;
+      background: #f7f7f7;
+      position: relative;
+      overflow: hidden;
+    }
+
+
+    #startText {
+      position: fixed;
+      top: 30%;
+      width: 100%;
+      text-align: center;
+      font-size: 32px;
+      font-weight: bold;
+      z-index: 10;
+    }
+
+    #gameOver {
+      position: fixed;
+      top: 30%;
+      width: 100%;
+      text-align: center;
+      font-size: 40px;
+      font-weight: bold;
+      display: none;
+      z-index: 20;
+    }
+
+    #gameOver span {
+      display: block;
+      font-size: 20px;
+      margin-top: 10px;
+    }
+
+    #score {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      font-size: 22px;
+      font-weight: bold;
+      z-index: 10;
+    }
+
+    #ground {
+      position: absolute;
+      bottom: 40%;
+      width: 100vw;
+      height: 80px;
+      background: url("./assets/ground.png") repeat-x;
+      background-size: contain;
+    }
+
+    #dino {
+      position: absolute;
+      bottom: 50%;
+      left: 8vw;
+      width: 60px;
+      user-select: none;
+    }
+
+    #cactus {
+      position: absolute;
+      bottom: 50%;
+      width: 40px;
+      left: 100vw;
+      user-select: none;
+    }
+    #bestScore {
+  position: fixed;
+  top: 50px;
+  right: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  z-index: 10;
+}
